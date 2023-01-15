@@ -46,6 +46,7 @@ public class PlayerControl : NetworkBehaviour
         {
             transform.position = new Vector3(Random.Range(defaultInitialPositionOnPlane.x, defaultInitialPositionOnPlane.y), 0,
                    Random.Range(defaultInitialPositionOnPlane.x, defaultInitialPositionOnPlane.y));
+            PlayerCameraFollow.Instance.FollowPlayer(transform.Find("PlayerCameraRoot"));
         }
     }
 

@@ -919,9 +919,9 @@ GameObject:
   - component: {fileID: 8782944162090155111}
   - component: {fileID: 3744294913487860803}
   - component: {fileID: 5257146460509302217}
-  - component: {fileID: 6236985613144584727}
   - component: {fileID: 2264890883838034701}
   - component: {fileID: 5072927326237234627}
+  - component: {fileID: 1064964943044483751}
   m_Layer: 8
   m_Name: PlayerArmatureNetworkAuthorative
   m_TagString: Player
@@ -1041,24 +1041,6 @@ MonoBehaviour:
   ScaleThreshold: 0.01
   InLocalSpace: 0
   Interpolate: 1
---- !u!114 &6236985613144584727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2255991852033553856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82d02a395452c4f44b6f87d460322c56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkSpeed: 1.5
-  runSpeedOffset: 2
-  rotationSpeed: 3.5
-  defaultInitialPositionOnPlane: {x: -4, y: 4}
-  networkPlayerState:
-    m_InternalValue: 0
 --- !u!114 &2264890883838034701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1166,6 +1148,28 @@ MonoBehaviour:
   - {fileID: 1276045500487741993}
   - {fileID: 145626458229361244}
   - {fileID: 4142797357641560077}
+--- !u!114 &1064964943044483751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2255991852033553856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 932d691fb08fd6e46bfb8464e00e2757, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 1.5
+  runSpeedOffset: 2
+  rotationSpeed: 3.5
+  defaultInitialPositionOnPlane: {x: -4, y: 4}
+  networkPositionDirection:
+    m_InternalValue: {x: 0, y: 0, z: 0}
+  networkRotationDirection:
+    m_InternalValue: {x: 0, y: 0, z: 0}
+  networkPlayerState:
+    m_InternalValue: 0
 --- !u!1 &2439462815760529262
 GameObject:
   m_ObjectHideFlags: 0
